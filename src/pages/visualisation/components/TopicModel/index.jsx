@@ -26,7 +26,7 @@ const TopicModel = () => {
         </Row>
         <h2> Visualisation des topics </h2>
         <Row justify="center">
-          <iframe style={{ minWidth: 1400 }} width="100%" height={800} frameBorder="0" scrolling="auto" src={urlPca} />
+          <iframe width="100%" height={800} frameBorder="0" scrolling="auto" src={urlPca} />
         </Row>
         <h2> Matrice des distances inter-topics </h2>
         <Row justify="center">

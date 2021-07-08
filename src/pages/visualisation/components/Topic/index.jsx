@@ -59,7 +59,7 @@ const Topic = () => {
       <Row gutter={[16, 24]} justify="center">
         <Col span={20}>
           <h2>Visualisation d'un document représentatif</h2>
-          <Select defaultValue={doc} size="middle" style={{ width: '50%' }} onChange={v => setDoc(v)}>
+          <Select value={doc} size="middle" style={{ width: '50%' }} onChange={v => setDoc(v)}>
             {
               docList.map(x => <Option value={x}>{x}</Option>)
             }

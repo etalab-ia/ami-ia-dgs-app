@@ -66,7 +66,7 @@ const Cluster = props => {
       <Row gutter={[5, 5]} justify={side}>
         <Col span={20}>
           <h2>Visualisation d'un document représentatif</h2>
-          <Select defaultValue={da?.doc} size="middle" style={{ width: '50%' }} onChange={v => setDa({ data: da?.data, doc: v })}>
+          <Select value={da?.doc} size="middle" style={{ width: '50%' }} onChange={v => setDa({ data: da?.data, doc: v })}>
             {
               docList.map(x => <Option value={x} key={x}>{x}</Option>)
             }

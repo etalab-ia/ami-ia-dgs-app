@@ -8,6 +8,7 @@ import WordCloudStandalone from './components/WordCloudStandalone/index.jsx';
 import Documents from './components/Documents/index.jsx';
 import Clusters from './components/Clusters/index.jsx';
 import Topic from './components/Topic/index.jsx';
+import DCO from './components/DCO/index.jsx'
 import ClustersModel from './components/ClustersModel/index.jsx';
 import TopicModel from './components/TopicModel/index.jsx'
 
@@ -30,6 +31,9 @@ const Visualisation = props => {
         <Menu.Item key="7">
           Clusters
         </Menu.Item>
+        <Menu.Item key="8">
+          DCOs
+        </Menu.Item>
         <Menu.Item key="3">
           Topics Visualisation Globale
         </Menu.Item>
@@ -50,6 +54,8 @@ const Visualisation = props => {
               return (<Documents />)
             case '7':
               return (<Clusters />)
+            case '8':
+              return (<DCO />)
           }
         })(menu)}
       </div>

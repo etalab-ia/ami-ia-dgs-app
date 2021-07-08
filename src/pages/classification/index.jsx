@@ -42,7 +42,7 @@ const Classification = ({ location: { pathname } }) => {
   return (
     <PageLayout title="Classification">
       <Row gutter={[16, 24]} justify="left">
-        <Select value={names[index]} size="middle" style={{ width: '35%' }} onChange={i => setIndex(i)}>
+        <Select value={names[index]} size="middle" style={{ width: '40%' }} onChange={i => setIndex(i)}>
           { names.map((x, i) => <Option value={i}>{x}</Option>) }
         </Select>
         <Pagination hideOnSinglePage current={index + 1} pageSize={1} total={data.length} onChange={(p, ps) => setIndex(p - 1)} />

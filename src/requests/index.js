@@ -42,3 +42,4 @@ export const getTopicModel = (x) => axios.get('/dgs-api/topics/model', genAuth(x
 export const getTopic = (id, x) => axios.get('/dgs-api/topics/' + id, genAuth(x))
 export const getClustersModel = (x) => axios.get('/dgs-api/clusters/model', genAuth(x))
 export const getClusters = (id, x) => axios.get('/dgs-api/clusters/' + id, genAuth(x))
+export const getDco = (text, x) => axios.get('/dgs-api/dcos/' + text + '/clusters', genAuth(x))

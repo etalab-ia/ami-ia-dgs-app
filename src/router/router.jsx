@@ -33,6 +33,7 @@ const AppRouter = () => {
   const documents = [useState()]
   const topic = [useState(), useState(), useState([]), useState()]
   const clusters = { state: [useState(), useState([]), useState(), useState([])], id: useState() }
+  const dco = [useState()]
   const topicModel = [useState()]
   const clustersModel = [useState([]), useState([]), useState(), useState({}),
     useState(-1), useState([]), useState([]), useState([]), useState([])]
@@ -43,6 +44,7 @@ const AppRouter = () => {
     documents: documents,
     topic: topic,
     clusters: clusters,
+    dco: dco,
     topicModel: topicModel,
     clustersModel: clustersModel,
     auth: auth
